@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  import ScriptTag from 'react-script-tag';
+const Demo = props => (
+<ScriptTag type="text/javascript" src="/path/to/reactCONOP.js" />
+)
+</head> 
+    <body>
+
+
+import { getEventListener } from 'controls';
+class SlideShow extends React.Component {
+      render() {
+         return (<div onClick={this.handleEvent}></div>) 
+      }
+
+      handleEvent = (event) => {
+         getEventListener(event, this);
+      }
+}
+
+    </body>
+</html>

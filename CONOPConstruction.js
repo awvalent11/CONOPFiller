@@ -4,9 +4,11 @@ import ReactDOM from 'react-dom';
 
 class KeyTasks extends React.Components {
    get keyTasks[]; 
+   /* You may have to use: let kT = []; 
+   kT = keyTasks.map; */ 
    
    render() {
-    <h4>{this.keyTasks}</h4>
+    return <h4>{this.keyTasks}</h4>
    }
 } 
 
@@ -16,7 +18,7 @@ class MissionStatement extends React.Components {
    get missionStatement; 
    
    render() {
-    <h1>{this.missionStatement}</h1>
+    return <h1>{this.missionStatement}</h1>
    }
 } 
 
@@ -26,7 +28,7 @@ class TrainingObjectives extends React.Components {
    get trainingObjectives[]; 
    
    render() {
-    <h4>{this.trainingObjectives}</h4>
+    return <h4>{this.trainingObjectives}</h4>
    }
 } 
 

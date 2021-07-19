@@ -1,0 +1,42 @@
+.container { 
+  display:grid;
+  grid-template-columns:[first] 20% [line1] 20% [line2] 20% [line3] 20% [line4] 20% [last]; 
+  grid-template-rows: [begin] 25% [lineA] 15% [lineB] 15% [lineC] 15% [lineD] 15% [lineE] 15% [final]; 
+} 
+
+#missionStatement{ 
+  grid-column-start:first;
+  grid-column-end: line2;
+  grid-row-start: begin;
+  grid-row-end: lineA;
+}
+
+
+
+#keyTasks { 
+  grid-column-start:first;
+  grid-column-end: line2;
+  grid-row-start: lineA;
+  grid-row-end: lineC;
+}
+
+#trainingObjectives { 
+  grid-column-start:first;
+  grid-column-end: line2;
+  grid-row-start: lineC;
+  grid-row-end: lineE;
+}
+
+#timeLine {
+  grid-column-start:first;
+  grid-column-end: last;
+  grid-row-start: lineE; 
+  grid-row-end: final;
+} 
+
+#imagery {
+  grid-column-start:line2;
+  grid-column-end:last;
+  grid-row-start: begin;
+  grid-row-end: lineE;
+}
